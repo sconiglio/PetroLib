@@ -32,23 +32,63 @@ body{
     text-align: center;
 
     top: 0;
+    margin-bottom: 50px;
 
-    display: inline-block;
-    position: inherit;
+    display: block;
+    position: relative;
 }
 
 .input{
     display: block;
     background:rgb(0, 0, 0, 0);
+
     border: none;
     border-bottom: solid 2px;
+    border-color: #ccc;
+    color: #fff;
+
     height: 40px;
     margin-bottom: 40px;
+
+    transition: all .2s;
 }
 .input::placeholder{
-    color: #B4B4B4;
+    color: #ddd;
+}
+.input:focus{
+    width: 105%;
+    outline: none;
 }
 
 button{
     display: block;
+}
+
+#login{
+    height: 50px;
+    margin-top: 50px;
+
+    border-radius: 10px;
+    border: #fff solid 1px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    font-family: roboto;
+    font-size: 18px;
+
+    transition: all .2s;
+}
+#login:hover{
+    background-color: rgba(255, 255, 255, 1);
+    color: #000;
+    cursor: pointer;
+}
+#account{
+    color: #fff;
+    margin: 10px 150px 10px 150px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+}
+#account:hover{
+    color: #ddd;
 }
