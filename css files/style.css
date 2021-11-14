@@ -92,3 +92,46 @@ button{
 #account:hover{
     color: #ddd;
 }
+
+
+#loadup{
+    width: 100vw;
+    height: 100vh;
+    background-color: #a6c0fe;
+
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10;
+
+    opacity: 0;
+    visibility: hidden;
+
+    animation: loadup 2s ease-in;
+    
+}
+#loadup h1{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 52px;
+    color: #fff;
+    text-align: center;
+}
+
+@keyframes loadup{
+    1%{
+        opacity: 1;
+        visibility: visible;
+    }
+    50%{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    99%{
+        visibility: hidden;
+    }
+}
