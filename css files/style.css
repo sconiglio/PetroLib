@@ -1,3 +1,137 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body{
-    background-color: #fff;
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+
+    width: 400px;
+    height: 40%;
+    margin-left: calc(50vw - 200px);
+    margin-top: 25vh;
+}
+
+.container h1{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 42px;
+    color: #fff;
+    text-align: center;
+
+    top: 0;
+    margin-bottom: 50px;
+
+    display: block;
+    position: relative;
+}
+
+.input{
+    display: block;
+    background:rgb(0, 0, 0, 0);
+
+    border: none;
+    border-bottom: solid 2px;
+    border-color: #ccc;
+    color: #fff;
+
+    height: 40px;
+    margin-bottom: 40px;
+
+    transition: all .2s;
+}
+.input::placeholder{
+    color: #ddd;
+}
+.input:focus{
+    width: 105%;
+    outline: none;
+}
+
+button{
+    display: block;
+}
+
+#login{
+    height: 50px;
+    margin-top: 50px;
+
+    border-radius: 10px;
+    border: #fff solid 1px;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    font-family: roboto;
+    font-size: 18px;
+
+    transition: all .2s;
+}
+#login:hover{
+    background-color: rgba(255, 255, 255, 1);
+    color: #000;
+    cursor: pointer;
+}
+#account{
+    color: #fff;
+    margin: 10px 150px 10px 150px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+}
+#account:hover{
+    color: #ddd;
+}
+
+
+#loadup{
+    width: 100vw;
+    height: 100vh;
+    background-color: #a6c0fe;
+
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10;
+
+    opacity: 0;
+    visibility: hidden;
+
+    animation: loadup 2s ease-in;
+    
+}
+#loadup h1{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 52px;
+    color: #fff;
+    text-align: center;
+}
+
+@keyframes loadup{
+    1%{
+        opacity: 1;
+        visibility: visible;
+    }
+    50%{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    99%{
+        visibility: hidden;
+    }
 }
