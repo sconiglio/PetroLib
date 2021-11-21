@@ -18,6 +18,30 @@
     height: 40px;
     width: 100px;
 
-    background-color: rgba(87, 41, 41, 0.5);
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+#friends{
+    position: absolute;
+    display: block;
+    left: 150px;
+    top: 90px;
+    height: 30px;
+    width: 70px;
+
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+#feed{
+    position: absolute;
+    display: block;
+    left: 260px;
+    top: 90px;
+    height: 30px;
+    width: 60px;
+
+    background-color: rgba(0, 0, 0, 0);
     border: none;
 }
