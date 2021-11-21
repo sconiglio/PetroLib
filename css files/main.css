@@ -45,3 +45,27 @@
     background-color: rgba(0, 0, 0, 0);
     border: none;
 }
+
+#back{
+    position: absolute;
+    display: block;
+    left: 80px;
+    top: 90px;
+    height: 30px;
+    width: 60px;
+
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+#show_statistics{
+    position: absolute;
+    display: block;
+    left: 160px;
+    top: 410px;
+    height: 30px;
+    width: 170px;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+}
